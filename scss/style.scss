@@ -1,0 +1,292 @@
+body {
+    font-family: Lato, sans-serif;
+    font-size: 14px;
+    color: #333;
+    line-height: 1.4;
+    margin: 0;
+    background-color:#fff;
+}
+
+.header {
+
+    &__logo {
+        display: inline-block;
+        max-width: 150px;
+    }
+    &__logo-img {
+        max-width: 100%;
+    }
+    
+    &__nav-item{
+        font-size: 1rem;
+        font-weight: 700;
+    }
+
+    &__nav-item +  &__nav-item {
+        margin-left: 35px;
+    }
+
+   &__nav-toggler {
+       background-color: #ddd;
+
+       &:focus {
+           box-shadow: none;
+       }
+   }
+}
+
+@media (max-width: 991.98px) { 
+    .header{
+
+        &__nav-item +  &__nav-item {
+            
+          margin-left: 0;
+        }
+    }
+    
+   }
+
+//     banner-section
+.banner {
+    min-height: 850px;
+    padding-top: 300px;
+    padding-bottom: 150px;
+    text-align: center;
+    background-image: url(../img/work-stations-plus-espresso.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+   
+
+    &__title {
+        margin: 0 0 15px 0;
+        font-family: Lato,sans-serif;
+        font-weight: 700;
+        font-size: 4.2rem;
+     }
+
+     &__subtitle {
+        font-family: Lato,sans-serif;
+        font-weight: 700;
+        font-size: 1.5rem;
+     }
+
+     &__hr {
+            width: 450px;
+            background-color: #fff;
+            border-width: 10px;
+             margin: 20px auto; 
+            opacity:unset;
+     }
+
+     &__link {
+         padding: 10px 20px;
+         color:#333;
+
+      &:hover {
+          background-color: #ddd;
+      }       
+     }
+
+     &__item + &__item {
+        margin-left: 10px;
+     } 
+     
+     .btn-light:focus {
+        box-shadow: none;
+    }         
+}
+
+
+
+.network-name {
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    padding-left: 5px;
+}
+
+.overlay {
+    position: relative;
+    z-index: 1;
+
+    &::after {
+        position: absolute;
+        top:0;
+        left:0;
+        width: 100%;
+        height: 100%;
+        content: "";
+        background-color: rgba(20, 28, 66, 0.5);
+        z-index: -1;
+    }
+}
+
+
+
+// content
+
+.content {
+    &__img {
+    width: 700px;
+    margin: 0;
+    padding:0;
+    object-fit: cover;
+}
+
+    &__title {
+        margin:  60px 0 30px;
+        font-family: Lato, sans-serif; 
+        font-size: 2rem;
+        font-weight: 700;
+    }
+
+    &__post {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 1.5;
+        color:#333;
+    }
+
+    &__link {
+        text-decoration: none;
+    }
+    
+    &__heading-spacer {
+        margin: 20px 0;
+        float: left;
+        width: 200px;
+        border-top: 3px solid rgb(121, 120, 120);
+    }
+
+}
+.section-a {
+    padding: 50px 0;
+
+}
+
+.section-b {
+    padding:50px 0;
+    border-top: 1px solid #e7e7e7;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.section-c {
+    padding: 50px 0;
+  
+}
+@media (max-width: 576px) { 
+    .section-b__card {
+      margin-top:40px;
+    }
+ }
+
+
+
+// contacts
+
+.contacts {
+    position: relative;
+    padding:100px 0;
+    background-image: url(../img/photo-1487017159836-4e23ece2e4cf.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  
+
+    h3 {
+        margin: 0;
+        font-family: Lato, sans-serif;
+        font-weight: 700;
+        font-size: 2.4rem;
+        text-shadow: 2px 2px 3px rgba(0, 0, 0, 60%);
+        color: #fff;
+    }
+
+    .btn-light:focus {
+        box-shadow: none;
+    }         
+
+    &__social-btn {
+        float: right;
+        margin:0;
+
+        
+    }
+  }
+
+  @media (max-width: 1199.98px) { 
+    .contacts__social-btn {
+        float: left;
+        margin-top: 20px;
+    }
+   }
+
+ 
+
+// Footer
+
+.footer {
+    padding: 50px 0;
+    background-color: #f8f8f8;
+
+    &__nav-list {
+      display: flex;
+      flex-wrap: wrap;
+      padding-left: 0;
+      margin-left: -15px;
+      list-style: none;
+      align-items: center;
+    }
+    
+    &__nav-link {
+        font-family: Lato,sans-serif;
+        font-weight: 700;
+        color:#428bca;
+        margin: 0;
+        
+    &:focus {
+        text-decoration: underline;
+        color:#428bca;
+    }
+
+    }
+    
+    &__copyright {
+        margin:15px 0 0 0;
+        font-family: Lato, sans-serif;
+        font-size: 12px;
+        font-weight: 700;
+        color:#777; 
+    }
+    
+    &__nav-item {
+       display: flex;
+       flex-wrap: wrap;
+
+    }
+
+    &__menu-divider {
+       color: #333;
+       font-size: 25px;
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
